@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Peribahasa Melayu</title>
+
+	   <!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+	
+	
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+
+            <div class="logo">
+                <h2>📖 Peribahasa Melayu</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Menu Utama</a></li>
+                <li><a href="learning.html">Pembelajaran</a></li>
+                <li><a href="practice.html" class="active">Latihan</a></li>
+                <li><a href="feedback.html">Maklum Balas</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <h1>Latihan dan Kuiz Interaktif</h1>
+
+                <p>
+                    Jawab soalan di bawah untuk menguji kefahaman tentang
+                    simpulan bahasa dan peribahasa Melayu. Pilih jawapan yang
+                    betul dan lihat maklum balas secara terus.
+                </p>
+
+                <a href="#quiz-section" class="btn">Mula Jawab</a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="images/guru.png" alt="Ilustrasi latihan peribahasa Melayu">
+            </div>
+
+        </section>
+
+        <!-- Arahan Section -->
+        <section class="about">
+
+            <h2>Arahan</h2>
+
+            <div class="about-container">
+
+                <div class="card">
+                    <h3> Baca Soalan</h3>
+                    <p>
+                        Baca soalan dengan teliti kemudian pilih jawapan yang tepat.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3> Pilih Jawapan</h3>
+                    <p>
+                        Klik pada pilihan jawapan yang betul.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3> Lihat keputusan</h3>
+                    <p>
+                        Keputusan keseluruhan anda akan dipaparkan.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Interactive Quiz Section -->
+        <section class="quiz-section" id="quiz-section">
+
+            <h2>Kuiz Simpulan Bahasa dan Peribahasa</h2>
+
+            <div class="score-box">
+                <p id="scoreText">Skor: 0/10 | Selesai: 0/10</p>
+            </div>
+
+            <div class="quiz-grid">
+
+                <!-- Question 1 -->
+                <div class="quiz-card" data-question="1" data-answered="false">
+                    <h3>1. Apakah maksud “ringan tulang”?</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="false">Suka tidur</button>
+                        <button class="option-btn" data-correct="true">Rajin membantu</button>
+                        <button class="option-btn" data-correct="false">Suka bermain</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="quiz-card" data-question="2" data-answered="false">
+                    <h3>2. “Ulat buku” bermaksud...</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="true">Orang yang suka membaca buku</button>
+                        <button class="option-btn" data-correct="false">Orang yang suka makan</button>
+                        <button class="option-btn" data-correct="false">Orang yang malas belajar</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="quiz-card" data-question="3" data-answered="false">
+                    <h3>3. Amir tidak pandai bermain bola. Simpulan bahasa yang sesuai ialah...</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="false">Ringan tulang</button>
+                        <button class="option-btn" data-correct="true">Kaki bangku</button>
+                        <button class="option-btn" data-correct="false">Baik hati</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="quiz-card" data-question="4" data-answered="false">
+                    <h3>4. Siti suka menolong rakan-rakannya. Siti seorang yang...</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="true">Baik hati</button>
+                        <button class="option-btn" data-correct="false">Kaki bangku</button>
+                        <button class="option-btn" data-correct="false">Batu api</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="quiz-card" data-question="5" data-answered="false">
+                    <h3>5. Apakah maksud “bagai aur dengan tebing”?</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="false">Suka bergaduh</button>
+                        <button class="option-btn" data-correct="true">Saling membantu</button>
+                        <button class="option-btn" data-correct="false">Tidak mahu berkawan</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="quiz-card" data-question="6" data-answered="false">
+                    <h3>6. “Sediakan payung sebelum hujan” bermaksud...</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="true">Bersedia sebelum sesuatu berlaku</button>
+                        <button class="option-btn" data-correct="false">Bermain ketika hujan</button>
+                        <button class="option-btn" data-correct="false">Membeli payung baharu</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="quiz-card" data-question="7" data-answered="false">
+                    <h3>7. Apakah maksud “malu bertanya sesat jalan”?</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="false">Tidak suka berjalan</button>
+                        <button class="option-btn" data-correct="false">Malu bercakap dengan orang</button>
+                        <button class="option-btn" data-correct="true">Jika tidak bertanya, kita mungkin melakukan kesilapan</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="quiz-card" data-question="8" data-answered="false">
+                    <h3>8. Peribahasa “sedikit-sedikit, lama-lama menjadi bukit” bermaksud...</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="true">Usaha kecil yang berterusan akan memberi hasil</button>
+                        <button class="option-btn" data-correct="false">Bukit yang semakin tinggi</button>
+                        <button class="option-btn" data-correct="false">Seseorang yang suka berjalan jauh</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="quiz-card" data-question="9" data-answered="false">
+                    <h3>9. “Nasi sudah menjadi bubur” bermaksud...</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="false">Nasi yang dimasak menjadi bubur</button>
+                        <button class="option-btn" data-correct="true">Perkara yang sudah berlaku tidak boleh diubah lagi</button>
+                        <button class="option-btn" data-correct="false">Seseorang yang suka makan bubur</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="quiz-card" data-question="10" data-answered="false">
+                    <h3>10. “Bersatu teguh, bercerai roboh” membawa maksud...</h3>
+
+                    <div class="options">
+                        <button class="option-btn" data-correct="false">Rumah yang hampir roboh</button>
+                        <button class="option-btn" data-correct="false">Tidak mahu bekerjasama</button>
+                        <button class="option-btn" data-correct="true">Kerjasama membawa kejayaan</button>
+                    </div>
+
+                    <p class="feedback"></p>
+                </div>
+
+            </div>
+
+            <div class="reset-area">
+                <button id="resetQuiz" class="btn reset-btn">Jawab Semula</button>
+            </div>
+
+        </section>
+
+        <!-- Closing Section -->
+        <section class="quote">
+
+            <blockquote>
+                “Tahniah kerana mencuba !”
+            </blockquote>
+
+            <br>
+
+            <a href="feedback.html" class="btn">Pergi ke Maklum Balas</a>
+
+        </section>
+
+    </main>
+
+   <div id="customPopup" class="custom-popup">
+    <div class="popup-box">
+        <div id="popupIcon" class="popup-icon">✅</div>
+        <h2 id="popupTitle">Tahniah !</h2>
+        <p id="popupMessage">Jawapan anda betul.</p>
+        <button id="closePopup">OK</button>
+    </div>
+	</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Portal Pembelajaran Peribahasa Melayu</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="java.js"></script>
+
+</body>
+</html>
